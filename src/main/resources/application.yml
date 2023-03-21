@@ -1,0 +1,14 @@
+# MyBatis
+mybatis:
+  # 搜索指定包别名
+  typeAliasesPackage: com.wangdefa.**.entity
+  # 配置mapper的扫描，找到所有的mapper.xml映射文件
+  mapperLocations: classpath*:mapper/*Mapper.xml
+  # 加载全局的配置文件
+  configLocation: classpath:mybatis-config.xml
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://39.98.164.111:3306/test?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: "Ydy980120"
